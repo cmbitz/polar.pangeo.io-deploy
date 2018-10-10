@@ -30,7 +30,7 @@ dependencies:
   - holoviews
   - libsodium
   - lz4
-  - matplotlib
+  - matplotlib=2.2.2
   - msgpack-python
   - nb_conda_kernels
   - netcdf4>1.4
