@@ -18,6 +18,22 @@ sources:
         access: read_only
       urlpath: 'gcs://sipn-data-sic/sic.zarr'
       
+  SIPN2_SIT:
+    description: Sea Ice Prediction Network Phase 2 (SIPN2) Sea ice thickness forecasts and IceBridge observations.
+    driver: zarr
+    metadata:
+      url: 'https://atmos.uw.edu/sipn'
+      tags:
+        - sea ice
+        - satellite
+        - forecast
+    args:
+      storage_options:
+        project: 'sipn2-pangeo'
+        token: browser
+        access: read_only
+      urlpath: 'gcs://sipn-data-hi/hi.zarr'
+      
   NSIDC_0081:
     description: Near-Real-Time DMSP SSMIS Daily Polar Gridded Sea Ice Concentrations, Version 1.
     driver: zarr
