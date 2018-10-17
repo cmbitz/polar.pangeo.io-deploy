@@ -1,0 +1,64 @@
+plugins:
+  source:
+    - module: intake_xarray
+sources:
+  SIPN2_SIC:
+    description: Sea Ice Prediction Network Phase 2 (SIPN2) Sea ice concentration forecasts and observations.
+    driver: zarr
+    metadata:
+      url: 'https://atmos.uw.edu/sipn'
+      tags:
+        - sea ice
+        - satellite
+        - forecast
+    args:
+      storage_options:
+        project: 'sipn2-pangeo'
+        token: browser
+        access: read_only
+      urlpath: 'gcs://sipn-data-sic/sic.zarr'
+      
+  NSIDC_0081:
+    description: Near-Real-Time DMSP SSMIS Daily Polar Gridded Sea Ice Concentrations, Version 1.
+    driver: zarr
+    metadata:
+      url: 'https://nsidc.org/data/nsidc-0081'
+      tags:
+        - sea ice
+        - satellite
+    args:
+      storage_options:
+        project: 'pangeo-data'
+        token: anon
+        access: read_only
+      urlpath: 'gcs://pangeo-data/polar/NSIDC_0081'      
+      
+  NSIDC_0051:
+    description: Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS Passive Microwave Data, Version 1.
+    driver: zarr
+    metadata:
+      url: 'https://nsidc.org/data/nsidc-0051'
+      tags:
+        - sea ice
+        - satellite
+    args:
+      storage_options:
+        project: 'pangeo-data'
+        token: anon
+        access: read_only
+      urlpath: 'gcs://pangeo-data/polar/NSIDC_0051'  
+
+  NSIDC_0079:
+    description: Bootstrap Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS, Version 3.
+    driver: zarr
+    metadata:
+      url: 'https://nsidc.org/data/nsidc-0079'
+      tags:
+        - sea ice
+        - satellite
+    args:
+      storage_options:
+        project: 'pangeo-data'
+        token: anon
+        access: read_only
+      urlpath: 'gcs://pangeo-data/polar/NSIDC_0079'  
