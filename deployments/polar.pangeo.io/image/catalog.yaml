@@ -30,7 +30,7 @@ sources:
     args:
       storage_options:
         project: 'sipn2-pangeo'
-        token: anon
+        token: browser
         access: read_only
       urlpath: 'gcs://sipn-data-hi/hi.zarr'
       
