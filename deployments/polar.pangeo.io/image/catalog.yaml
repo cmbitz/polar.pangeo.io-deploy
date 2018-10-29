@@ -50,7 +50,7 @@ sources:
         access: read_only
         engine: netcdf4
         concat_dim: ocean_regions
-        chunks: {'x': 304, 'y'=448, 'nregions'=21, 'ocean_regions'=14}
+        chunks: {'x': 304, 'y':448, 'nregions':21, 'ocean_regions':14}
       urlpath: 'gcs://sipn-grids/sio_2016_mask_Update.nc'      
       
   NSIDC_0081:
