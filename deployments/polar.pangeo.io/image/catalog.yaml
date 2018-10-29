@@ -34,6 +34,22 @@ sources:
         access: read_only
       urlpath: 'gcs://sipn-data-hi/hi.zarr'
       
+  SIPN2_GRIDS:
+    description: Sea Ice Prediction Network Phase 2 (SIPN2), useful Arctic grids.
+    driver: netcdf
+    metadata:
+      url: 'https://atmos.uw.edu/sipn'
+      tags:
+        - sea ice
+        - satellite
+        - forecast
+    args:
+      storage_options:
+        project: 'sipn2-pangeo'
+        token: anon
+        access: read_only
+      urlpath: 'gcs://sipn-grids/sio_2016_mask_Update.nc'      
+      
   NSIDC_0081:
     description: Near-Real-Time DMSP SSMIS Daily Polar Gridded Sea Ice Concentrations, Version 1.
     driver: zarr
