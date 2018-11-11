@@ -8,3 +8,5 @@ jupyterhub:
     memory:
       limit: 14G
       guarantee: 4G
+    storage:
+      capacity: 20Gi
