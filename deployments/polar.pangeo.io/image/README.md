@@ -1,4 +1,4 @@
-# Welcome to Polar Pangeo!
+# Welcome to Polar Pangeo! 
 
 Here you will find some example notebooks to get you started exploring datasets
 - Example_Load_Catalog.ipynb - Loads in three different Sea Ice Concentration observations products and plots the pan-Arctic extent through time.
