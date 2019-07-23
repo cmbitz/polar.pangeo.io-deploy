@@ -13,10 +13,10 @@ sources:
         - forecast
     args:
       storage_options:
-        project: 'sipn2-pangeo'
+        project: 'polar-pangeo'
         token: anon
         access: read_only
-      urlpath: 'gcs://sipn-data-sic/sic.zarr'
+      urlpath: 'gcs://polar-sipn-sic/sic.zarr'
       
   SIPN2_SIT:
     description: Sea Ice Prediction Network Phase 2 (SIPN2) Sea ice thickness forecasts and IceBridge observations.
@@ -29,10 +29,10 @@ sources:
         - forecast
     args:
       storage_options:
-        project: 'sipn2-pangeo'
+        project: 'polar-pangeo'
         token: anon
         access: read_only
-      urlpath: 'gcs://sipn-data-hi/hi.zarr'
+      urlpath: 'gcs://polar-sipn-hi/hi.zarr'
       
   SIPN2_GRIDS:
     description: Sea Ice Prediction Network Phase 2 (SIPN2), useful Arctic grids.
@@ -45,13 +45,13 @@ sources:
         - forecast
     args:
       storage_options:
-        project: 'pangeo-data'
+        project: 'polar-pangeo'
         token: anon
         access: read_only
 
 
 
-      urlpath: 'gcs://pangeo-data/polar/sio_2016_mask_Update.zarr'
+      urlpath: 'gcs://pangeo-pangeo/polar/sio_2016_mask_Update.zarr'
       
   NSIDC_0081:
     description: Near-Real-Time DMSP SSMIS Daily Polar Gridded Sea Ice Concentrations, Version 1.
@@ -63,10 +63,10 @@ sources:
         - satellite
     args:
       storage_options:
-        project: 'pangeo-data'
+        project: 'polar-pangeo'
         token: anon
         access: read_only
-      urlpath: 'gcs://pangeo-data/polar/NSIDC_0081'      
+      urlpath: 'gcs://polar-pangeo/polar/NSIDC_0081'      
       
   NSIDC_0051:
     description: Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS Passive Microwave Data, Version 1.
@@ -78,10 +78,10 @@ sources:
         - satellite
     args:
       storage_options:
-        project: 'pangeo-data'
+        project: 'polar-pangeo'
         token: anon
         access: read_only
-      urlpath: 'gcs://pangeo-data/polar/NSIDC_0051'  
+      urlpath: 'gcs://polar_pangeo/polar/NSIDC_0051'  
 
   NSIDC_0079:
     description: Bootstrap Sea Ice Concentrations from Nimbus-7 SMMR and DMSP SSM/I-SSMIS, Version 3.
@@ -93,7 +93,7 @@ sources:
         - satellite
     args:
       storage_options:
-        project: 'pangeo-data'
+        project: 'polar-pangeo'
         token: anon
         access: read_only
-      urlpath: 'gcs://pangeo-data/polar/NSIDC_0079'  
+      urlpath: 'gcs://polar_pangeo/polar/NSIDC_0079'  
